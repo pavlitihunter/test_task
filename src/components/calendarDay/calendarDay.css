@@ -1,0 +1,35 @@
+.calendar__day {
+  margin: 0.25em;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  height: 40px;
+  max-width: 40px;
+}
+
+.calendar__day_disabled {
+	color: rgba(70, 130, 180, .3);
+	pointer-events: none;
+}
+
+.calendar__day_selected .calendar__day-number {
+	background-color: #31d0ff;
+	color: #fff;
+}
+.calendar__day_selected.calendar__day_has-event .calendar__day-number {
+	color: #fff;
+}
+
+.calendar__day_has-event .calendar__day-number {
+	color: #f00;
+}
+
+.calendar__day-number {
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	font-size: 14px;
+	justify-content: center;
+	height: 100%;
+}
